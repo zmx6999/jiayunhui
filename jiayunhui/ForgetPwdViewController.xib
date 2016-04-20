@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ForgetPwdViewController">
+            <connections>
+                <outlet property="ensureText" destination="wtk-7g-bDB" id="KOl-SA-sSV"/>
+                <outlet property="nextButton" destination="vpn-mN-dVg" id="WgP-nP-Wgy"/>
+                <outlet property="phoneText" destination="8M8-ym-gh4" id="4MR-yn-O9k"/>
+                <outlet property="sendLabel" destination="y1m-5c-ILk" id="Ngn-Pi-SzX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F3Y-3B-bdY">
+                    <rect key="frame" x="0.0" y="60" width="600" height="120"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8M8-ym-gh4">
+                            <rect key="frame" x="30" y="20" width="180" height="30"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="180" id="OkB-AI-gJs"/>
+                                <constraint firstAttribute="height" constant="30" id="iis-BE-8EB"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ldf-BH-qCc">
+                            <rect key="frame" x="0.0" y="60" width="600" height="1"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.94117647058823528" green="0.93725490196078431" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="ih5-Nl-Exi"/>
+                            </constraints>
+                        </view>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入验证码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wtk-7g-bDB">
+                            <rect key="frame" x="30" y="81" width="180" height="30"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        </textField>
+                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发送验证码" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1m-5c-ILk">
+                            <rect key="frame" x="475" y="66" width="100" height="50"/>
+                            <animations/>
+                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="Quz-Ol-JSa"/>
+                                <constraint firstAttribute="width" constant="100" id="Y1W-cf-3Ur"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="x3T-r9-c4x" appends="YES" id="Haq-yc-aIC"/>
+                            </connections>
+                        </label>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="y1m-5c-ILk" firstAttribute="top" secondItem="Ldf-BH-qCc" secondAttribute="bottom" constant="5" id="1dJ-va-IC5"/>
+                        <constraint firstItem="8M8-ym-gh4" firstAttribute="top" secondItem="F3Y-3B-bdY" secondAttribute="top" constant="20" id="2r4-Gg-iEU"/>
+                        <constraint firstAttribute="trailing" secondItem="Ldf-BH-qCc" secondAttribute="trailing" id="7Lk-h8-Mi6"/>
+                        <constraint firstAttribute="trailing" secondItem="y1m-5c-ILk" secondAttribute="trailing" constant="25" id="Kut-o0-mdb"/>
+                        <constraint firstItem="8M8-ym-gh4" firstAttribute="leading" secondItem="F3Y-3B-bdY" secondAttribute="leading" constant="30" id="N5E-y6-BAK"/>
+                        <constraint firstItem="Ldf-BH-qCc" firstAttribute="top" secondItem="8M8-ym-gh4" secondAttribute="bottom" constant="10" id="Nx3-Tt-Z2L"/>
+                        <constraint firstItem="wtk-7g-bDB" firstAttribute="top" secondItem="Ldf-BH-qCc" secondAttribute="bottom" constant="20" id="PEo-FU-ePc"/>
+                        <constraint firstItem="Ldf-BH-qCc" firstAttribute="leading" secondItem="F3Y-3B-bdY" secondAttribute="leading" id="Vks-QI-d5b"/>
+                        <constraint firstAttribute="height" constant="120" id="aKa-0L-yPk"/>
+                        <constraint firstItem="wtk-7g-bDB" firstAttribute="width" secondItem="8M8-ym-gh4" secondAttribute="width" id="f90-xN-Kcx"/>
+                        <constraint firstItem="wtk-7g-bDB" firstAttribute="leading" secondItem="8M8-ym-gh4" secondAttribute="leading" id="gLz-j5-KOC"/>
+                        <constraint firstItem="wtk-7g-bDB" firstAttribute="height" secondItem="8M8-ym-gh4" secondAttribute="height" id="vdN-uy-3uy"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpn-mN-dVg">
+                    <rect key="frame" x="20" y="200" width="560" height="50"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="9LO-TA-8Ra"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <state key="normal" title="下一步">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled">
+                        <color key="titleColor" red="0.83921568627450982" green="0.83921568627450982" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="next:" destination="-1" eventType="touchUpInside" id="N5t-34-2YH"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="vpn-mN-dVg" secondAttribute="trailing" constant="20" id="5e3-ro-uNX"/>
+                <constraint firstItem="vpn-mN-dVg" firstAttribute="top" secondItem="F3Y-3B-bdY" secondAttribute="bottom" constant="20" id="Dhc-6C-DF8"/>
+                <constraint firstAttribute="trailing" secondItem="F3Y-3B-bdY" secondAttribute="trailing" id="KyV-IC-1wm"/>
+                <constraint firstItem="F3Y-3B-bdY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="Myd-fN-Rem"/>
+                <constraint firstItem="F3Y-3B-bdY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TkT-Lo-Jlp"/>
+                <constraint firstItem="vpn-mN-dVg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="gRG-cY-LeE"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="387" y="304"/>
+        </view>
+        <tapGestureRecognizer id="x3T-r9-c4x">
+            <connections>
+                <action selector="sendEnsureCode:" destination="-1" id="dnh-1X-SQB"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

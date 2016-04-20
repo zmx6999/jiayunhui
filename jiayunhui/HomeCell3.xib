@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="home3" id="KGk-i7-Jjw" customClass="HomeCell3">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="270"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="269.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eCR-oe-5is">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="1"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="KgJ-DI-Nhk"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="和嘉芸汇行业专家沟通" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQO-04-6wy">
+                        <rect key="frame" x="220" y="30" width="160" height="19.5"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我们会帮你选择合适的服务器和解决遇到的问题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCj-l9-tvP">
+                        <rect key="frame" x="174" y="59.5" width="252" height="14.5"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dvv-OO-xuu">
+                        <rect key="frame" x="416.5" y="119" width="133.5" height="133.5"/>
+                        <animations/>
+                        <state key="normal" image="home_weibo"/>
+                        <connections>
+                            <action selector="weibo:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="PXu-Pl-gXv"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fs-nj-zJM">
+                        <rect key="frame" x="50" y="119" width="133.5" height="133.5"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="4fs-nj-zJM" secondAttribute="height" multiplier="1:1" id="VjS-Dl-tGo"/>
+                        </constraints>
+                        <state key="normal" image="home_phone"/>
+                        <connections>
+                            <action selector="call:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hHA-ya-3G8"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="010-84004091" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaX-ds-q3s">
+                        <rect key="frame" x="73.5" y="257.5" width="85.5" height="14.5"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="官方微信" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y1X-zb-jfO">
+                        <rect key="frame" x="275" y="257.5" width="48" height="14.5"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="官方微博" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pzy-TU-paR">
+                        <rect key="frame" x="459" y="257" width="48" height="14.5"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JjL-Gg-q7H">
+                        <rect key="frame" x="233" y="119" width="133.5" height="133.5"/>
+                        <animations/>
+                        <state key="normal" image="home_weixin"/>
+                        <connections>
+                            <action selector="wechat:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="RcG-nb-yNZ"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="gaX-ds-q3s" firstAttribute="centerX" secondItem="4fs-nj-zJM" secondAttribute="centerX" id="0wO-rc-ChE"/>
+                    <constraint firstItem="Dvv-OO-xuu" firstAttribute="top" secondItem="JjL-Gg-q7H" secondAttribute="top" id="7ms-Mn-9ub"/>
+                    <constraint firstItem="CCj-l9-tvP" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="8L0-nA-uiq"/>
+                    <constraint firstItem="Dvv-OO-xuu" firstAttribute="width" secondItem="JjL-Gg-q7H" secondAttribute="width" id="9Cd-sw-qiX"/>
+                    <constraint firstItem="Dvv-OO-xuu" firstAttribute="leading" secondItem="JjL-Gg-q7H" secondAttribute="trailing" constant="50" id="AyC-q2-RAM"/>
+                    <constraint firstItem="4fs-nj-zJM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="50" id="EQ2-8V-Nmp"/>
+                    <constraint firstItem="JjL-Gg-q7H" firstAttribute="top" secondItem="4fs-nj-zJM" secondAttribute="top" id="FuW-Cb-bxt"/>
+                    <constraint firstItem="eCR-oe-5is" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="G89-ln-l5P"/>
+                    <constraint firstItem="JjL-Gg-q7H" firstAttribute="height" secondItem="4fs-nj-zJM" secondAttribute="height" id="NEu-iu-14z"/>
+                    <constraint firstItem="Pzy-TU-paR" firstAttribute="centerX" secondItem="Dvv-OO-xuu" secondAttribute="centerX" id="OoY-gM-s7L"/>
+                    <constraint firstItem="JjL-Gg-q7H" firstAttribute="width" secondItem="4fs-nj-zJM" secondAttribute="width" id="Um2-tX-OGQ"/>
+                    <constraint firstItem="Y1X-zb-jfO" firstAttribute="centerX" secondItem="JjL-Gg-q7H" secondAttribute="centerX" id="bRY-nY-KYT"/>
+                    <constraint firstItem="Y1X-zb-jfO" firstAttribute="top" secondItem="gaX-ds-q3s" secondAttribute="top" id="cMd-Pu-62x"/>
+                    <constraint firstItem="gaX-ds-q3s" firstAttribute="top" secondItem="4fs-nj-zJM" secondAttribute="bottom" constant="5" id="caJ-AH-ocQ"/>
+                    <constraint firstItem="CCj-l9-tvP" firstAttribute="top" secondItem="fQO-04-6wy" secondAttribute="bottom" constant="10" id="emI-48-usp"/>
+                    <constraint firstItem="fQO-04-6wy" firstAttribute="top" secondItem="eCR-oe-5is" secondAttribute="bottom" constant="29" id="fcs-OQ-XTj"/>
+                    <constraint firstAttribute="trailing" secondItem="eCR-oe-5is" secondAttribute="trailing" id="gnR-sS-ewG"/>
+                    <constraint firstItem="4fs-nj-zJM" firstAttribute="top" secondItem="CCj-l9-tvP" secondAttribute="bottom" constant="45" id="hzP-Cb-pFk"/>
+                    <constraint firstItem="fQO-04-6wy" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="itJ-yY-QzY"/>
+                    <constraint firstAttribute="trailing" secondItem="Dvv-OO-xuu" secondAttribute="trailing" constant="50" id="mSZ-M4-JxD"/>
+                    <constraint firstItem="Dvv-OO-xuu" firstAttribute="height" secondItem="JjL-Gg-q7H" secondAttribute="height" id="r6L-Bd-5Fj"/>
+                    <constraint firstItem="eCR-oe-5is" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ubb-TV-bK1"/>
+                    <constraint firstItem="JjL-Gg-q7H" firstAttribute="leading" secondItem="4fs-nj-zJM" secondAttribute="trailing" constant="50" id="vDD-7e-qzy"/>
+                    <constraint firstItem="Pzy-TU-paR" firstAttribute="top" secondItem="Y1X-zb-jfO" secondAttribute="top" id="vQF-wC-4Cc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <point key="canvasLocation" x="232" y="288"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="home_phone" width="120" height="120"/>
+        <image name="home_weibo" width="120" height="120"/>
+        <image name="home_weixin" width="120" height="120"/>
+    </resources>
+</document>
